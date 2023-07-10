@@ -12,8 +12,9 @@
         "esbenp.prettier-vscode"
       ],
 
-      "settings": { 
-        "terminal.integrated.shell.linux": null
+      "settings": {
+        "terminal.integrated.shell.linux": null,
+        "terminal.integrated.env.TZ": "Asia/Shanghai"  
       }
 
     }
