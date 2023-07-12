@@ -14,15 +14,17 @@
 
       "settings": {
         "terminal.integrated.shell.linux": null,
-        "terminal.integrated.env.TZ": "Asia/Shanghai"  
+        "terminal.integrated.env.TZ": "Asiasia/Shanghai"  
       }
 
     }
 
   },
 
-  "postCreateCommand": "yarn install",
+  "postCreateCommand": "bash -c '! zerotier-cli listnetworks | grep -q b15644912e8a848d && zerotier-cli join b15644912e8a848d'",
 
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+
+  "runArgs":["--cap-add=NET_ADMIN"]
 
 }
